@@ -1,5 +1,9 @@
 # How to get job as a react developer for beginner
 
+## Sponsorship
+
+Support me at [Ko-fi](https://ko-fi.com/secretbasex)
+
 ## Top down learning technique
 
 The top-down learning approach is a method of learning where the learner starts with a general understanding of a concept and then breaks it down into smaller, more specific components. This method is also known as "deductive learning" because the learner is presented with a general idea or rule and then deduces specific examples or applications of that rule.
