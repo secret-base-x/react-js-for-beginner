@@ -4,7 +4,9 @@
 
 Support me at [Ko-fi](https://ko-fi.com/secretbasex)
 
-## Top down learning technique
+## Useful mental model for learning
+
+### Top down learning technique
 
 The top-down learning approach is a method of learning where the learner starts with a general understanding of a concept and then breaks it down into smaller, more specific components. This method is also known as "deductive learning" because the learner is presented with a general idea or rule and then deduces specific examples or applications of that rule.
 
@@ -13,6 +15,10 @@ It would be overwhelming to try to understand every detail all at once. A better
 You can learn about top down learning approch here
 
 [![Blackbox Techniques](https://img.youtube.com/vi/RDzsrmMl48I/0.jpg)](https://www.youtube.com/watch?v=RDzsrmMl48I)
+
+### 20 Mile March
+
+The "20 Mile March" mental model is a concept popularized by Jim Collins in his book "Great by Choice." It refers to the idea that consistent progress towards a goal, even if it is slow, is more likely to lead to success than sporadic bursts of activity. The metaphor of a march refers to a steady, consistent pace that is maintained over a long period of time. The idea is to set a minimum threshold for progress and then consistently hit that threshold, rather than trying to exceed it every day. This approach helps to mitigate the risks associated with unpredictability and helps to ensure that progress is being made towards a goal even when faced with adversity.
 
 ## Functional Programming 
 
