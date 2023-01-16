@@ -28,11 +28,11 @@ When working with business applications, we often receive data in the form of an
 
 ```javascript
 const products = [
-    {name: "Laptop", price: 800, category: "Electronics"},
-    {name: "Tablet", price: 300, category: "Electronics"},
-    {name: "Camera", price: 600, category: "Photography"},
-    {name: "Shirt", price: 50, category: "Clothing"},
-    {name: "Pants", price: 70, category: "Clothing"}
+    {id: 1, name: "Laptop", price: 800, category: "Electronics"},
+    {id: 2, name: "Tablet", price: 300, category: "Electronics"},
+    {id: 3, name: "Camera", price: 600, category: "Photography"},
+    {id: 4, name: "Shirt", price: 50, category: "Clothing"},
+    {id: 5, name: "Pants", price: 70, category: "Clothing"}
 ];
 
 const filteredProducts = products.filter(product => product.category === "Electronics" && product.price < 800);
