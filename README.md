@@ -106,5 +106,43 @@ function App() {
   );
 }
 
-export default MyComponent;
+export default App;
+```
+
+The custom hook doesnt necessarily return as array, you can return it as object for example
+
+```javascript
+import { useState } from 'react';
+
+function useToggle(initialValue) {
+  const [value, setValue] = useState(initialValue);
+  
+  const toggle = () => {
+    setValue(!value);
+  };
+  
+  return {value, toggle};
+}
+
+export default useToggle;
+```
+
+You can then use useToggle like this
+
+```javascript
+import React from 'react';
+import useToggle from './useToggle';
+
+function App() {
+  const {value: isVisible, toggle: toggleVisibility} = useToggle(true);
+
+  return (
+    <div>
+      <button onClick={toggleVisibility}>Toggle Visibility</button>
+      {isVisible && <p>This is some visible text.</p>}
+    </div>
+  );
+}
+
+export default App;
 ```
