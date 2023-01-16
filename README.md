@@ -40,5 +40,5 @@ console.log(filteredProducts);
 // Output: [{name: "Tablet", price: 300, category: "Electronics"}]
 ```
 
-## Mastering Common Patterns in React
+## Common patterns in React for business applications
 In real-world business applications, there are many commonly used patterns in React that repeat frequently. For beginners, it is beneficial to study these patterns as it can aid in understanding how they work and the subtle details involved. Even if the patterns are not fully understood at first, by studying multiple patterns, an individual will be able to gain a deeper understanding over time.
