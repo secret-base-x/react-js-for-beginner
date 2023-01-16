@@ -95,7 +95,7 @@ You can then use useToggle like this
 import React from 'react';
 import useToggle from './useToggle';
 
-function MyComponent() {
+function App() {
   const [isVisible, toggleVisibility] = useToggle(true);
 
   return (
