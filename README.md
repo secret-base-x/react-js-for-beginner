@@ -42,3 +42,69 @@ console.log(filteredProducts);
 
 ## Common patterns in React for business applications
 In real-world business applications, there are many commonly used patterns in React that repeat frequently. For beginners, it is beneficial to study these patterns as it can aid in understanding how they work and the subtle details involved. Even if the patterns are not fully understood at first, by studying multiple patterns, an individual will be able to gain a deeper understanding over time.
+
+### Toggle Visibility
+
+In React, you can use state to toggle the visibility of an item. Here is an example of how you can do this:
+u
+```javascript
+import React, { useState } from 'react';
+
+function App() {
+  const [isVisible, setIsVisible] = useState(true);
+
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  }
+
+  return (
+    <div>
+      <button onClick={toggleVisibility}>Toggle Visibility</button>
+      {isVisible && <p>This is some visible text.</p>}
+    </div>
+  );
+}
+
+export default App;
+```
+In this example, a button element is rendered with an onClick event listener that calls the toggleVisibility function. The toggleVisibility function toggles the value of the isVisible state variable between true and false. If isVisible is true, the p element is rendered, otherwise it will not be rendered.
+
+You can apply this logic to your item that you want to toggle visibility.
+
+#### Encapsulate the toggle login into custom hook useToggle
+
+```javascript
+import { useState } from 'react';
+
+function useToggle(initialValue) {
+  const [value, setValue] = useState(initialValue);
+  
+  const toggle = () => {
+    setValue(!value);
+  };
+  
+  return [value, toggle];
+}
+
+export default useToggle;
+```
+
+You can then use useToggle like this
+
+```javascript
+import React from 'react';
+import useToggle from './useToggle';
+
+function MyComponent() {
+  const [isVisible, toggleVisibility] = useToggle(true);
+
+  return (
+    <div>
+      <button onClick={toggleVisibility}>Toggle Visibility</button>
+      {isVisible && <p>This is some visible text.</p>}
+    </div>
+  );
+}
+
+export default MyComponent;
+```
