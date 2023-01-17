@@ -1,4 +1,4 @@
-# How to get job as a react developer for beginner
+# Reactjs for beginner
 
 ## Sponsorship
 
