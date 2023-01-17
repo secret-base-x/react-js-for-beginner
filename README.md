@@ -146,3 +146,34 @@ function App() {
 
 export default App;
 ```
+
+### Displaying an HTML List Element from an Array 
+
+Here's an example of creating an unordered list of employees in a React component using the ul and li tags:
+
+```js
+import React from 'react';
+
+const EmployeeList = () => {
+  const employees = [
+    { id: 1, firstName: 'John', lastName: 'Doe' },
+    { id: 2, firstName: 'Jane', lastName: 'Smith' },
+    { id: 3, firstName: 'Bob', lastName: 'Johnson' },
+    { id: 4, firstName: 'Samantha', lastName: 'Williams' },
+  ];
+
+  return (
+    <ul>
+      {employees.map(employee => (
+        <li key={employee.id}>
+          {employee.firstName} {employee.lastName}
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+export default EmployeeList;
+```
+
+In this example, we create an array of employee objects, each containing an id, firstName, and lastName property. We then use the map function to iterate over the array and create a list item li for each employee. The key prop is used to ensure that React can keep track of each list item when the component is updated.
