@@ -1,7 +1,5 @@
 # Reactjs for beginner
 
-## Sponsorship
-
 Support me at [Ko-fi](https://ko-fi.com/secretbasex)
 
 ## Useful mental model for learning
